@@ -23,6 +23,7 @@ export default function configureStore(initialState={}) {
     load(store)
     .then((newState) => console.log('Loaded state:', newState))
     .catch(() => console.log('Failed to load previous state'));
+    window.store = store;
     return store;
     //const store = createStoreWithMiddleware(reducer);
     //return store;
