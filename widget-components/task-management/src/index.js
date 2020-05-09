@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux'
-import configureStore from './store';
+import createStore from 'application-bootstrap-widget';
 import Widget from './widget/TaskManagement.connect';
 
 ReactDOM.render(
-    <Provider store={configureStore()}>
+    <Provider store={createStore()}>
         <React.StrictMode>
             <Widget />
         </React.StrictMode>

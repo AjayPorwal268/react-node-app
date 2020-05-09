@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "description": "task-management widget",
   "main": "index.js",
+  "module": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --mode development",
@@ -23,7 +24,9 @@
     "react-intl": "^4.5.1",
     "react-redux": "^7.2.0",
     "redux": "^4.0.5",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "task-management-api": "~1.0.0",
+    "application-bootstrap-widget": "~1.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
