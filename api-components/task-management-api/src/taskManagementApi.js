@@ -6,7 +6,7 @@ class taskManagementApi extends coreApi {
         super(store, config.reduxSliceName);
     };
 
-    createTask = (taskObj) => {
+    createTask (taskObj) {
         this.triggerRestCall()
     }
 }

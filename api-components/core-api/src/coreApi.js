@@ -1,4 +1,4 @@
-import {createActionToDispatch} from "./coreApiUtil";
+import {createActionToDispatch} from "./coreApiUtils";
 
 class coreApi {
     constructor(store, reduxSliceName) {
@@ -6,7 +6,7 @@ class coreApi {
         this.reduxSlice = reduxSliceName
     };
 
-    dispatchAction = ({actionTYpe, resPayload}) => {
+    dispatchAction ({actionTYpe, resPayload}) {
         const action = createActionToDispatch(actionTYpe);
         this.store.dispatchAction(action(resPayload));
     }
