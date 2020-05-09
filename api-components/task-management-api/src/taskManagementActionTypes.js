@@ -1,4 +1,4 @@
-import transformActionTypes from 'coreApi';
+import transformActionTypes from 'core-api';
 
 const ActionTypes = transformActionTypes([
     'CREATE_TASK',

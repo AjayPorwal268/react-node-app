@@ -49,5 +49,12 @@ module.exports = {
         }
         ]
     },
+    // resolve: {
+    //     mainFiles: ['src/index']
+    // }
+    resolve: {
+        mainFields: ['module', 'main']
+    }
+    
    //plugins: [htmlWebpackPlugin]
 };

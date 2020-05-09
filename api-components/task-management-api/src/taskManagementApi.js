@@ -1,4 +1,4 @@
-import {coreApi} from "core-Api"
+import {coreApi} from "core-api"
 import config from "./taskManagementConfig"
 
 class taskManagementApi extends coreApi {
