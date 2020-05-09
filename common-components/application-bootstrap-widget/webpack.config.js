@@ -49,5 +49,8 @@ module.exports = {
         }
         ]
     },
-   plugins: [htmlWebpackPlugin]
+   plugins: [htmlWebpackPlugin],
+   resolve: {
+        mainFields: ['module', 'main']
+    }
 };
