@@ -1,6 +1,6 @@
 {
   "name": "task-management-api",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "",
   "main": "index.js",
   "module": "src/index.js",
@@ -15,8 +15,8 @@
   "author": "Ajay Porwal",
   "license": "ISC",
   "dependencies": {
-    "path": "^0.12.7",
-    "core-api": "~1.0.0"
+    "core-api": "^1.0.0",
+    "path": "^0.12.7"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
