@@ -1,4 +1,4 @@
 export {default} from  "./taskManagementApi";
-export {taskManagementReducer} from "./taskManagementReducer"
-export {taskManagementActionTypes} from "./taskManagementActionTypes"
-export {taskManagementConfig} from "./taskManagementConfig"
+export {default as taskManagementReducer} from "./taskManagementReducer"
+export {default as taskManagementActionTypes} from "./taskManagementActionTypes"
+export {default as taskManagementConfig} from "./taskManagementConfig"
