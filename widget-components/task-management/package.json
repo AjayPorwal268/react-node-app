@@ -1,6 +1,6 @@
 {
   "name": "task-management",
-  "version": "1.0.1",
+  "version": "1.2.0",
   "description": "task-management widget",
   "main": "index.js",
   "module": "src/index.js",
@@ -15,6 +15,7 @@
   "author": "ajay porwal",
   "license": "ISC",
   "dependencies": {
+    "application-bootstrap-widget": "^1.1.0",
     "classnames": "^2.2.6",
     "lodash": "^4.17.15",
     "path": "^0.12.7",
@@ -25,8 +26,7 @@
     "react-redux": "^7.2.0",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
-    "task-management-api": "~1.0.0",
-    "application-bootstrap-widget": "~1.0.0"
+    "task-management-api": "^1.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
