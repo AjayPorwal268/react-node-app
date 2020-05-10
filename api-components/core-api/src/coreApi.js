@@ -3,12 +3,13 @@ import {createActionToDispatch} from "./coreApiUtils";
 class coreApi {
     constructor(store, reduxSliceName) {
         this.store = store;
-        this.reduxSlice = reduxSliceName
+        this.reduxSlice = reduxSliceName;
+        this.dispatchAction = this.dispatchAction.bind(this);
     };
 
-    dispatchAction ({actionTYpe, resPayload}) {
+    dispatchAction (actionTYpe, resPayload) {
         const action = createActionToDispatch(actionTYpe);
-        this.store.dispatchAction(action(resPayload));
+        this.store.dispatch(action(resPayload));
     }
 
     getState () {
@@ -32,7 +33,7 @@ class coreApi {
             this.dispatchAction(initiatesuccessType);
             return res;
         } catch(e) {
-            this.dispatchAction(initiatefailureType, res);
+            this.dispatchAction(initiatefailureType, e);
             throw e;
         }
     }

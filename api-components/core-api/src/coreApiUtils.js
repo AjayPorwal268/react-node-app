@@ -1,14 +1,14 @@
 export const transformActionTypes = (actionTypeArr) => {
     return actionTypeArr.reduce((accu, value) => {
-        acc[value] = value;
-        return acc;
+        accu[value] = value;
+        return accu;
     }, {});
 };
 
 export const createActionToDispatch = (actionTYpe) => {
     return (resPayload) => {
         const action = {type : actionTYpe};
-        if (res) {
+        if (resPayload) {
             action.payload = resPayload;
         }
         return action;
