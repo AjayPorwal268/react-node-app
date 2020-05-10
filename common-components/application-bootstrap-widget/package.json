@@ -1,6 +1,6 @@
 {
   "name": "application-bootstrap-widget",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "",
   "main": "index.js",
   "module": "src/index.js",
@@ -15,11 +15,12 @@
   "author": "ajay porwal",
   "license": "ISC",
   "dependencies": {
+    "core-api": "^1.1.0",
+    "path": "^0.12.7",
     "redux": "^4.0.5",
     "redux-storage": "^4.1.2",
     "redux-storage-engine-localstorage": "^1.1.4",
-    "redux-thunk": "^2.3.0",
-    "path": "^0.12.7"
+    "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",

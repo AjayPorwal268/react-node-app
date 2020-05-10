@@ -1,11 +1,9 @@
-import storeUtil from "./store";
-import apiIntance from "./apiInstance"
+import createStore from "./store"
+
+export {default} from "./apiInstance";
+export {createStore};
 
 
-window.storeUtil = storeUtil;
+window.store = createStore;
 
 console.log("test widget")
-
-export default {apiIntance,
-    storeUtil,
-};
