@@ -1,4 +1,4 @@
-import {coreApi} from "core-api"
+import {coreApi, commerceService} from "core-api"
 import config from "./taskManagementConfig"
 
 class taskManagementApi extends coreApi {
@@ -6,8 +6,11 @@ class taskManagementApi extends coreApi {
         super(store, config.reduxSliceName);
     };
 
-    createTask (taskObj) {
-        this.triggerRestCall()
+    createTask () {
+        this.triggerRestCall(commerceService.fetchAllTask, {
+            results: 1,
+            inc: 'name,email,picture'
+        });
     }
 }
 
